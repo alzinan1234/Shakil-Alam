@@ -16,43 +16,43 @@ import {
 export const Banner = () => {
   return (
     <>
-      <div className="banner px-4 md:flex items-center justify-between">
+      <div className="  banner px-4 md:flex items-center justify-between">
         {/* ------------------- banner container ---------------- */}
         <div className="  items-center pt-[150px]">
-          <div className="block px-3 ">
+          <div className=" maxWidth mx-auto block px-3 ">
             {/* ---------socail-icon ---------- */}
             <div className="social-icon flex flex-wrap gap-3">
               <a href="/" className="mr-3">
-                <i className="text-[25px] text-[#9E9E9E] ">
+                <i className="text-[25px] text-[#fff]  hover:text-green-500 transition-all duration-500 ">
                   <FaFacebook />
                 </i>
               </a>
               <a href="#" className="mr-3">
-                <i className="text-[25px] text-[#9E9E9E]  ">
+                <i className="text-[25px] text-[#fff]  hover:text-green-500 transition-all duration-500">
                   <FaLinkedin />
                 </i>
               </a>
               <a href="#" className="mr-3">
-                <i className="text-[25px] text-[#9E9E9E] ">
+                <i className="text-[25px] text-[#fff] hover:text-green-500 transition-all duration-500">
                   <FaTwitter />
                 </i>
               </a>
               <a href="#" className="mr-3">
-                <i className="text-[25px] text-[#9E9E9E] ">
+                <i className="text-[25px] text-[#fff] hover:text-green-500 transition-all duration-500">
                   <FaGithub />
                 </i>
               </a>
               <a href="#" className="mr-3">
-                <i className="text-[25px] text-[#9E9E9E]  ">
+                <i className="text-[25px] text-[#fff]  hover:text-green-500 transition-all duration-500">
                   <FaEnvelope />
                 </i>
               </a>
             </div>
             {/* ---------- heading text animation---------- */}
             <div className="banner-heading-text mt-[45px]">
-              <a className=" banner-heading" href="https://git.io/typing-svg">
+              <a href="https://git.io/typing-svg">
                 <img
-                  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=48&pause=3000&color=FFFFFF&width=453&height=76&lines=I'm+Elias+Shekh.;My+Web+Services-"
+                  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=43&pause=1000&width=438&height=70&lines=I'm++Shakil+Alam+;My+Services+-"
                   alt="Typing SVG"
                 />
               </a>
@@ -65,7 +65,7 @@ export const Banner = () => {
             </div>
 
             {/* ------------------------ Banner button  -------------- */}
-            <div className="banner-Button flex justify-start  md:mt-[120px]">
+            <div className=" banner-Button flex justify-start  md:mt-[80px]">
               <Link
                 href={"#services"}
                 className="btn-epic justify-center items-center "
