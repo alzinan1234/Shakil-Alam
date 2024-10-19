@@ -63,6 +63,11 @@ export const Banner = () => {
               <FaCaretDown className="down-content-out-box flex relative top-[126px] text-[#fff] left-[20px] text-[35px]" />
               <TextChangeAnimation />
             </div>
+            <div className=" mt-10">
+              <button className="bg-[#F26C4F] p-3 px-6 text-xl text-white">
+                Download CV
+              </button>
+            </div>
 
             {/* ------------------------ Banner button  -------------- */}
             <div className=" banner-Button flex justify-start  md:mt-[80px]">

@@ -7,10 +7,12 @@ class TextChangeAnimation extends React.Component {
     this.state = {
       textIndex: 0,
       texts: [
-        "Full Stack Web developer",
-        "AWS Web Services",
+        "SQA Engineer",
+        "Software Developer",
+        "QA Analyst",
+        "Testing techniques",
         "Hosting Management",
-        "DevOps",
+
         "Creative Person",
       ],
     };
