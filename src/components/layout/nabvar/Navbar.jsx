@@ -47,9 +47,9 @@ export const Navbar = () => {
             <div className="hidden lg:flex space-x-6">
               {[
                 "Home",
-                "Services",
-                "Project",
                 "About",
+                "Experience",
+                "Project",
                 "Reviews",
                 "Contact",
               ].map((item) => (

@@ -13,7 +13,7 @@ import {
 const About = () => {
   return (
     <div className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="maxWidth mx-auto">
         <div className="title-line mb-10"></div>
         <div className="text-center mb-10 flex justify-center items-center">
           <h1 className="text-4xl md:text-[84px] mt-8 font-bold uppercase ">
@@ -57,14 +57,15 @@ const About = () => {
           </div>
 
           {/* Image & Social Section */}
-          <div className="flex flex-col items-center lg:w-1/2">
-            <div className=" bg-image w-60 h-60 sm:w-80 sm:h-80 md:w-[500px] md:h-[500px] mb-7 mt-10 bg-image">
+          <div className="flex flex-col items-center">
+            <div className="relative w-60 h-60 sm:w-80 sm:h-80 md:w-[500px] md:h-[500px] mb-7 mt-10 rounded-full overflow-hidden">
+              <div className="absolute inset-0 bg-cover bg-center bg-image"></div>
               <Image
                 className="rounded-full border-radius"
                 src={image}
                 alt="Profile Pic"
-                width={500}
-                height={500}
+                layout="fill"
+                objectFit="cover"
               />
             </div>
             <div className="flex space-x-4">
