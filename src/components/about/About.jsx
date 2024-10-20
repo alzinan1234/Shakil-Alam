@@ -1,56 +1,108 @@
 import React from "react";
 import "./About.css";
+import image from "../../app/assets/home/shanto-vsi2.png";
 import Image from "next/image";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 
 const About = () => {
   return (
-    <>
-      <div className="py-20">
-        <div className="maxWidth mx-auto">
-          <div className="title-line"></div>
-          <div>
-            <div className="flex items-center justify-center">
-              <h1 className="title uppercase text-center flex items-center justify-center ">
-                About me
+    <div className="py-20 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="title-line mb-10"></div>
+        <div className="text-center mb-10 flex justify-center items-center">
+          <h1 className="text-4xl md:text-[84px] mt-8 font-bold uppercase ">
+            About me
+          </h1>
+        </div>
+        <div className="title-line mt-4"></div>
+
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+          {/* Text Section */}
+
+          <div className="lg:w-1/2 text-center lg:text-left mb-10">
+            <div>
+              <h1 className="text-black font-extrabold text-3xl  md:mb-5">
+                Experience & Education
               </h1>
             </div>
-            <div className="title-line"></div>
-            <div>
-              <p className="p-title">
-                Hello, <span className="text-green-600">I am Shakil Alam</span>,
-                3+ years of hands-on experience in Manual and Automation
-                testing. Strong understanding of Software Development Life Cycle
-                (SDLC), ISO standards, and Agile methodology. Proficient in
-                developing test plans, test cases, and others required all test
-                activities from scratch for both manual and automated testing.
-                <span>
-                  I graduated from{" "}
-                  <span className="text-green-600">Southeast University </span>{" "}
-                  of Science & Technology with a Bachelors degree in Computer
-                  Science & Engineering
-                </span>
-                <span className="text-green-600">
-                  {" "}
-                  I am SQA Engineer (SQA).
-                </span>{" "}
-                a software development company currently specialising in Mobile
-                applications development in the iOS App Store with more than 10+
-                subscription-based mobile applications.
-              </p>
+            <p className="text-lg md:text-xl">
+              Hello,{" "}
+              <span className="text-green-600 font-semibold">
+                I am Shakil Alam
+              </span>
+              , 3+ years of hands-on experience in Manual and Automation
+              testing. Strong understanding of Software Development Life Cycle
+              (SDLC), ISO standards, and Agile methodology. Proficient in
+              developing test plans, test cases, and other test activities for
+              both manual and automated testing.
+            </p>
+            <p className="mt-4">
+              I graduated from{" "}
+              <span className="text-green-600 font-semibold">
+                Southeast University
+              </span>
+              with a Bachelor’s degree in Computer Science & Engineering. I am
+              currently working as a{" "}
+              <span className="text-green-600 font-semibold">SQA Engineer</span>{" "}
+              in a software development company specializing in mobile
+              applications. We have more than 10+ subscription-based mobile
+              applications in the iOS App Store.
+            </p>
+          </div>
+
+          {/* Image & Social Section */}
+          <div className="flex flex-col items-center lg:w-1/2">
+            <div className=" bg-image w-60 h-60 sm:w-80 sm:h-80 md:w-[500px] md:h-[500px] mb-7 mt-10 bg-image">
+              <Image
+                className="rounded-full border-radius"
+                src={image}
+                alt="Profile Pic"
+                width={500}
+                height={500}
+              />
             </div>
-            <div>
-              <div className="flex justify-center items-center">
-                {/* <Image
-                  className="rounded-full w-32 h-32 object-cover"
-                  src="https://via.placeholder.com/150"
-                  alt="Profile Pic"
-                /> */}
-              </div>
+            <div className="flex space-x-4">
+              <a
+                href="/"
+                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="#"
+                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="#"
+                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="#"
+                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="#"
+                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+              >
+                <FaEnvelope />
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
