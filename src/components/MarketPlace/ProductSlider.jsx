@@ -1,32 +1,23 @@
-// import mail from "../../app/assets/products/mail.png";
-// import authenticator from "../../app/assets/products/authenticator.png";
-// import explore from "http://www.themestarz.net/html/selfer/assets/img/logo-03-w.png";
-// import dns from "../../app/assets/products/dns.png";
-// import calendar from "../../app/assets/products/calendar.png";
-// import analytics from "../../app/assets/products/analytics.png";
-// import workspace from "../../app/assets/products/workspace.png";
-// import file from "../../app/assets/products/file.png";
-// import cdo from "../../app/assets/products/cdo.png";
+"use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/autoplay"; // Import autoplay module CSS
+
+import Image from "next/image";
+import place1 from "../../app/assets/reviews/upwork.webp";
+import "./MarketPlace.css";
 
 const ProductSlider = () => {
   const products = [
     {
-      image:
-        "https://w7.pngwing.com/pngs/798/102/png-transparent-upwork-freelancer-com-fiverr-peopleperhour-others.png",
+      image: place1,
     },
     {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-fVj3UuCUFAjclmOpoRRI5JhQx4Gxy33AA&usqp=CAU",
     },
-
-    {
-      image: "https://www.toptal.com/toptal-logo.png",
-    },
-
     {
       image: "https://i.ytimg.com/vi/wTBJF-UTIrY/maxresdefault.jpg",
     },
@@ -35,69 +26,55 @@ const ProductSlider = () => {
         "https://w7.pngwing.com/pngs/798/102/png-transparent-upwork-freelancer-com-fiverr-peopleperhour-others.png",
     },
     {
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-fVj3UuCUFAjclmOpoRRI5JhQx4Gxy33AA&usqp=CAU",
-    },
-
-    {
       image: "https://www.toptal.com/toptal-logo.png",
     },
-
     {
       image: "https://i.ytimg.com/vi/wTBJF-UTIrY/maxresdefault.jpg",
     },
   ];
 
   return (
-    <div>
+    <div className="maxWidth my-10">
       <Swiper
-        slidesPerView={2}
-        spaceBetween={10}
-        speed={5000}
-        autoplay={{
-          delay: 1,
-          disableOnInteraction: false,
-          reverseDirection: true,
-        }}
+        spaceBetween={30}
         loop={true}
+        autoplay={{
+          delay: 0, // No delay between slides
+          disableOnInteraction: false, // Keep autoplay running even when interacted with
+          pauseOnMouseEnter: false, // Keep it moving even on mouse hover
+        }}
+        speed={2000} // Faster sliding speed for marquee-like effect
+        modules={[Autoplay]}
         breakpoints={{
-          420: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+          // Adjust the number of slides based on screen size
+          320: {
+            slidesPerView: 1, // 1 slide on small screens (phones)
           },
           640: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+            slidesPerView: 2, // 2 slides on tablets
           },
-          1160: {
-            slidesPerView: 4,
-            spaceBetween: 50,
+          1024: {
+            slidesPerView: 3, // 3 slides on small desktops
           },
-          1650: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+          1280: {
+            slidesPerView: 4, // 4 slides on large desktops
           },
-          2000: {
-            slidesPerView: 6,
-            spaceBetween: 50,
+          1536: {
+            slidesPerView: 5, // 5 slides on extra large screens
           },
         }}
-        modules={[Autoplay]}
-        className="mySwiper "
+        className="product-slider"
       >
-        {products?.map((item, index) => (
+        {products.map((product, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-black border border-[#414548]  xl:w-[280px] 2xl:w-[320px] sm:h-[115px] h-[90px] rounded-[10px] flex gap-2 items-center justify-center">
-              <img
-                src={item.image}
-                alt="Picture of product"
-                width={80}
-                height={76}
-                className="product_image  h-full object-cover w-[100%] md:p-2 rounded-[5%]"
+            <div className="xl:w-[280px] 2xl:w-[320px] sm:h-[115px] h-[90px] rounded-[10px] flex gap-5 p-10 items-center justify-center">
+              <Image
+                src={product.image}
+                alt={`Product ${index + 1}`}
+                width={300}
+                height={200}
+                className="object-contain md:p-2 product_image"
               />
-              {/* <p className="text-white text-[14px] sm:text-[16px] md:text-[18px] font-[500]">
-                {item.title}
-              </p> */}
             </div>
           </SwiperSlide>
         ))}
