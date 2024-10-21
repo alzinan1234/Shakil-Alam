@@ -1,5 +1,6 @@
 import About from "@/components/About/About";
 import { Banner } from "@/components/banner/Banner";
+import Blog from "@/components/Blog/Blog";
 import Education from "@/components/Education/Education";
 import Experience from "@/components/Experiences/Experience";
 import Expertise from "@/components/Expertise/Expertise";
@@ -16,6 +17,7 @@ const Home = () => {
       <Education />
       <Expertise />
       <Projects />
+      <Blog />
     </div>
   );
 };

@@ -52,7 +52,7 @@ export const Navbar = () => {
                 "Education",
                 "Expertise",
                 "Project",
-                "Contact",
+                "Blog",
               ].map((item) => (
                 <Link
                   key={item}
