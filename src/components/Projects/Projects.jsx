@@ -76,7 +76,7 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-indigo-600 hover:text-indigo-800 font-medium bg-orange-600 p-2 px-5 rounded"
+                  className="text-white hover:text-indigo-800 font-medium bg-orange-600 p-2 px-5 rounded"
                 >
                   Learn More
                 </a>
