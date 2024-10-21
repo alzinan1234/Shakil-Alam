@@ -70,9 +70,9 @@ const Expertise = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center p-4 bg-white shadow-2xl rounded-lg hover:bg-indigo-100 transition-all"
+                className="flex flex-col items-center p-4 bg-white shadow-2xl rounded-lg hover:bg-indigo-100 transition-all shadow-red-600"
               >
-                <div className="text-5xl text-indigo-600 mb-4">
+                <div className="text-5xl text-indigo-600 mb-4 transition-transform transform hover:-scale-y-100 duration-500">
                   {skill.icon}
                 </div>
                 <p className="text-lg font-semibold">{skill.name}</p>

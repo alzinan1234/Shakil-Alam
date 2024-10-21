@@ -62,7 +62,7 @@ const Projects = () => {
             <Image
               src={project.image}
               alt={project.name}
-              className="w-full h-56 object-cover"
+              className="w-full h-56 object-cover transition-transform transform hover:-scale-y-100 duration-500"
             />
             <div className="p-6">
               <h2 className="text-3xl text-black font-semibold mb-4 hover:text-green-600 transition-all duration-500">
