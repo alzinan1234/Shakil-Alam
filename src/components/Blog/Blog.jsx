@@ -4,6 +4,7 @@ import images2 from "../../app/assets/reviews/image2.avif";
 import images3 from "../../app/assets/reviews/image3.avif";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import "./Blog.css";
 
 const Blog = () => {
   const blogData = [
@@ -47,37 +48,40 @@ const Blog = () => {
       </div>
 
       {/* Blog content */}
-      <div className="maxWidth mx-auto px-4 sm:px-6 lg:px-8 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
-          {blogData.map((blog, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-lg overflow-hidden "
-            >
-              <a href={blog.link}>
-                <Image
-                  src={blog.imageUrl}
-                  alt={blog.title}
-                  className="w-full h-56 object-cover transition-transform transform hover:-scale-x-100 duration-500"
-                  width={500}
-                  height={300}
-                />
-                <div className="p-6">
-                  <h2 className="text-2xl font-semibold mb-2 hover:text-blue-500 duration-500">
-                    {blog.title}
-                  </h2>
-                  <p className="text-gray-600 mb-4">{blog.description}</p>
-                  <p className=" flex items-center gap-4 group">
-                    <span className="text-red-500 flex items-center gap-2 borders hover:bg-orange-500 hover:group-hover:text-white   transition-all duration-700 ">
-                      {" "}
-                      Read more{" "}
-                      <FaArrowRight className="w-4 h-4 text-red-500  hover:group-hover:text-white" />
-                    </span>
-                  </p>
-                </div>
-              </a>
-            </div>
-          ))}
+
+      <div className="">
+        <div className="blog-Bg maxWidth mx-auto px-4 sm:px-6 lg:px-8 ">
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
+            {blogData.map((blog, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-md rounded-lg overflow-hidden "
+              >
+                <a href={blog.link}>
+                  <Image
+                    src={blog.imageUrl}
+                    alt={blog.title}
+                    className="w-full h-56 object-cover transition-transform transform hover:-scale-x-100 duration-500"
+                    width={500}
+                    height={300}
+                  />
+                  <div className="p-6">
+                    <h2 className="text-2xl font-semibold mb-2 hover:text-blue-500 duration-500">
+                      {blog.title}
+                    </h2>
+                    <p className="text-gray-600 mb-4">{blog.description}</p>
+                    <p className=" flex items-center gap-4 group">
+                      <span className="text-red-500 flex items-center gap-2 borders hover:bg-orange-500 hover:group-hover:text-white   transition-all duration-700 ">
+                        {" "}
+                        Read more{" "}
+                        <FaArrowRight className="w-4 h-4 text-red-500  hover:group-hover:text-white" />
+                      </span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

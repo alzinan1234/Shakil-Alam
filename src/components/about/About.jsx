@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className="title-line mt-4"></div>
 
-        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+        <div className=" blog-Bg flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
           {/* Text Section */}
 
           <div className="lg:w-1/2 text-center lg:text-left mb-10">
