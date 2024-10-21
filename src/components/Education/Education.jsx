@@ -61,7 +61,7 @@ const Education = () => {
           {educationData.map((education, index) => (
             <div
               key={index}
-              className="w-full max-w-full md:max-w-4xl mx-auto flex flex-col md:flex-row gap-6 bg-[#ffffffec] shadow-2xl  hover:shadow-lg transition-shadow duration-300 rounded-lg border border-[#23c62eb8] p-5 md:p-10"
+              className="w-full max-w-full md:max-w-4xl mx-auto flex flex-col md:flex-row gap-6 bg-[#ffffffec] shadow-2xl shadow-green-400  hover:shadow-lg transition-shadow duration-300 rounded-lg   border-2 border-[#23c62eb8] p-5 md:p-10"
             >
               {/* Logo Section */}
               <div className="flex-shrink-0 flex items-center justify-center">
