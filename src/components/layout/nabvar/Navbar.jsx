@@ -49,8 +49,9 @@ export const Navbar = () => {
                 "Home",
                 "About",
                 "Experience",
+                "Education",
+                "Expertise",
                 "Project",
-                "Reviews",
                 "Contact",
               ].map((item) => (
                 <Link

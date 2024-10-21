@@ -61,7 +61,7 @@ const Education = () => {
           {educationData.map((education, index) => (
             <div
               key={index}
-              className="w-full max-w-full md:max-w-4xl mx-auto flex flex-col md:flex-row gap-6 bg-[#fff] shadow-2xl shadow-red-500 hover:shadow-lg transition-shadow duration-300 rounded-lg border border-[#23c62eb8] p-5 md:p-10"
+              className="w-full max-w-full md:max-w-4xl mx-auto flex flex-col md:flex-row gap-6 bg-[#ffffffec] shadow-2xl  hover:shadow-lg transition-shadow duration-300 rounded-lg border border-[#23c62eb8] p-5 md:p-10"
             >
               {/* Logo Section */}
               <div className="flex-shrink-0 flex items-center justify-center">
@@ -76,28 +76,32 @@ const Education = () => {
 
               {/* Text Content */}
               <div className="ml-0 md:ml-5">
-                <h2 className="text-2xl font-bold text-[#198c34] flex items-center">
+                <h2 className="text-3xl font-bold text-[#198c34] flex items-center">
                   {education.institution}
                   <a
                     href={education.certificate}
-                    className="text-sm ml-2 text-green-600 hover:underline"
+                    className="ml-2 text-green-600 hover:underline"
                   ></a>
                 </h2>
-                <p className="text-lg font-medium text-gray-700 mt-1">
+                <p className="text-2xl  font-bold text-gray-700 mt-1">
                   {education.degree}
                 </p>
-                <p className="text-gray-600 mt-1">{education.major}</p>
-                <p className="text-gray-600 mt-1">{education.duration}</p>
+                <p className="text-gray-600 mt-1 text-lg font-bold ">
+                  {education.major}
+                </p>
+                <p className="text-gray-600 mt-1 text-lg font-bold">
+                  {education.duration}
+                </p>
 
                 {/* CGPA / GPA Section */}
                 {education.cgpa && (
-                  <p className="text-gray-600 mt-1">
+                  <p className="text-gray-600 mt-1 font-bold">
                     CGPA:{" "}
                     <span className="text-green-600">{education.cgpa}</span>
                   </p>
                 )}
                 {education.gpa && (
-                  <p className="text-gray-600 mt-1">
+                  <p className="text-gray-600 mt-1 font-bold">
                     GPA: <span className="text-green-600">{education.gpa}</span>
                   </p>
                 )}
