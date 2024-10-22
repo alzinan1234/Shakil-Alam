@@ -1,4 +1,4 @@
-import About from "@/components/About/About";
+import About from "../components/About/About.jsx";
 import { Banner } from "@/components/banner/Banner";
 import Blog from "@/components/Blog/Blog";
 import Education from "@/components/Education/Education";
