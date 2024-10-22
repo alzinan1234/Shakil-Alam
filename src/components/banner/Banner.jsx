@@ -16,7 +16,10 @@ import {
 export const Banner = () => {
   return (
     <>
-      <div className=" banner px-4 md:flex items-center justify-between">
+      <div
+        id="home"
+        className=" banner px-4 md:flex items-center justify-between"
+      >
         {/* ------------------- banner container ---------------- */}
         <div className="  items-center pt-[150px]">
           <div className=" maxWidth mx-auto block px-3 ">

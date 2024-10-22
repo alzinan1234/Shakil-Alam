@@ -1,9 +1,9 @@
 import Image from "next/image";
-import moduleName from "../../app/assets/reviews/ccddb3583f1.avif";
+import image1 from "../../app/assets/reviews/ccddb3583f1.avif";
 import images2 from "../../app/assets/reviews/image2.avif";
 import images3 from "../../app/assets/reviews/image3.avif";
 import React from "react";
-import { FaArrowRight, FaDove } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import "./Blog.css";
 
 const Blog = () => {
@@ -12,7 +12,7 @@ const Blog = () => {
       title: "Exploring Next.js for Web Development",
       description:
         "Next.js is a powerful framework built on top of React. It simplifies the process of building optimized web applications...",
-      imageUrl: moduleName,
+      imageUrl: image1,
       link: "https://x.com/elayadesigns/status/1838932477022216216/photo/1",
     },
     {
