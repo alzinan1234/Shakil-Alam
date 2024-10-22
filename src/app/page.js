@@ -1,13 +1,11 @@
-import About from "@/components/About/About.jsx";
-import { Banner } from "@/components/banner/Banner.jsx";
-
-import Blog from "@/components/Blog/Blog.jsx";
-import Education from "@/components/Education/Education.jsx";
-import Experience from "@/components/Experiences/Experience.jsx";
-import Expertise from "@/components/Expertise/Expertise.jsx";
-import MarketPlace from "@/components/MarketPlace/MarketPlace.jsx";
-import Projects from "@/components/Projects/Projects.jsx";
-
+import About from "@/components/About/About";
+import { Banner } from "@/components/banner/Banner";
+import Blog from "@/components/Blog/Blog";
+import Education from "@/components/Education/Education";
+import Experience from "@/components/Experiences/Experience";
+import Expertise from "@/components/Expertise/Expertise";
+import MarketPlace from "@/components/MarketPlace/MarketPlace";
+import Projects from "@/components/Projects/Projects";
 import React from "react";
 
 const Home = () => {
