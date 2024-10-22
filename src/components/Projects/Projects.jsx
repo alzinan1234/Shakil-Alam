@@ -57,12 +57,12 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white  rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300  shadow-lg w-[500px]"
+            className="bg-white  rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300  shadow-lg md:w-[500px]"
           >
             <Image
               src={project.image}
               alt={project.name}
-              className="w-full h-56 object-cover transition-transform transform hover:-scale-y-100 duration-500"
+              className="w-full md:h-56 object-cover transition-transform transform hover:-scale-y-100 duration-500"
             />
             <div className="p-6">
               <h2 className="text-3xl text-black font-semibold mb-4 hover:text-green-600 transition-all duration-500">
