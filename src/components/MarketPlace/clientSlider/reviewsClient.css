@@ -72,11 +72,6 @@
     #9d70ffb6 69.86%,
     #70b7ffb3 90.2%
   );
-  -webkit-mask: linear-gradient(black 0 0) content-box,
-    linear-gradient(black 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  transition: 2s ease-in-out;
 }
 
 /* ------------ insite slider design ------------ */
