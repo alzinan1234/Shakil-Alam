@@ -68,7 +68,7 @@ const ProductSlider = () => {
         >
           {products.map((product, index) => (
             <SwiperSlide key={index}>
-              <div className="xl:w-[280px] 2xl:w-[320px] sm:h-[115px] h-[90px] rounded-[10px] flex gap-5 p-10 items-center justify-center">
+              <div className="xl:w-[280px] 2xl:w-[320px] sm:h-[125px] h-[90px] rounded-[10px] flex gap-5 p-10 items-center justify-center">
                 <Image
                   src={product.image}
                   alt={`Product ${index + 1}`}

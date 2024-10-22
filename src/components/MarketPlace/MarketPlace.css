@@ -27,13 +27,13 @@
 
 @media (max-width: 540px) {
   .product_image {
-    width: 100px;
+    width: 200px;
     height: 61px;
   }
 }
 @media (max-width: 400px) {
   .product_image {
-    width: 100px;
+    width: 200px;
     height: 51px;
   }
 }

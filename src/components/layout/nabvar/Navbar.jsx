@@ -2,21 +2,37 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaWindowClose } from "react-icons/fa";
-import Image from "next/image";
 import "./Navbar.css";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-[#fff] transition ease transform duration-300`;
-
-  // Navbar scrolling behavior
   const [isFixed, setIsFixed] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-[#fff] transition ease transform duration-300`;
 
   const handleScroll = () => {
     if (window.scrollY >= window.innerHeight / 6) {
       setIsFixed(true);
     } else {
       setIsFixed(false);
+    }
+
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        setActiveSection(section.getAttribute("id"));
+      }
+    });
+  };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      setActiveSection(sectionId); // Set the active section on click
     }
   };
 
@@ -54,13 +70,15 @@ export const Navbar = () => {
                 "Project",
                 "Blog",
               ].map((item) => (
-                <Link
+                <button
                   key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="hover-menu text-[15px] font-[600] uppercase text-white hover:text-amber-500 duration-200"
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                  className={`hover-menu text-[15px] font-[600] uppercase text-white hover:text-amber-500 duration-200 ${
+                    activeSection === item.toLowerCase() ? "text-amber-500" : ""
+                  }`}
                 >
                   {item}
-                </Link>
+                </button>
               ))}
             </div>
 
@@ -100,9 +118,7 @@ export const Navbar = () => {
             } lg:hidden`}
           >
             <div className="flex justify-between items-center mb-8">
-              <h1 className="text-white text-[18px] font-[600]">
-                Elias Portfolio
-              </h1>
+              <h1 className="text-white text-[18px] font-[600]">Shakil_Alam</h1>
               <button onClick={() => setIsOpen(false)}>
                 <FaWindowClose className="text-white text-2xl" />
               </button>
@@ -118,13 +134,19 @@ export const Navbar = () => {
                 "Reviews",
                 "Contact",
               ].map((item) => (
-                <li key={item} onClick={() => setIsOpen(false)}>
-                  <Link
-                    href={`#${item.toLowerCase()}`}
-                    className="text-white text-[15px] font-[600] uppercase hover:text-amber-500 duration-200"
+                <li
+                  key={item}
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                >
+                  <button
+                    className={`text-white text-[15px] font-[600] uppercase hover:text-amber-500 duration-200 ${
+                      activeSection === item.toLowerCase()
+                        ? "text-amber-500"
+                        : ""
+                    }`}
                   >
                     {item}
-                  </Link>
+                  </button>
                 </li>
               ))}
             </ul>

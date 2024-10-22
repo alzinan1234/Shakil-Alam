@@ -12,7 +12,7 @@ import {
 
 const About = () => {
   return (
-    <div className="py-20 px-4">
+    <div id="about" className="py-20 px-4">
       <div className="maxWidth mx-auto">
         <div className="title-line mb-10"></div>
         <div className="text-center mb-10 flex justify-center items-center">

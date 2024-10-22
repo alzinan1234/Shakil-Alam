@@ -88,7 +88,11 @@ export const Banner = () => {
           </div>
         </div>
         <div className="">
-          <Image className="w-[600px] h-[600px] -mt-10" src={banner} alt="" />
+          <Image
+            className="md:w-[600px]  -mt-10 object-cover"
+            src={banner}
+            alt=""
+          />
         </div>
       </div>
     </>

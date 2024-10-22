@@ -52,7 +52,7 @@ const Expertise = () => {
 
   return (
     <>
-      <div className="py-10">
+      <div id="expertise" className="py-10">
         <div className="maxWidth mx-auto">
           <div className="title-line mb-10"></div>
           <div className="text-center mb-10 flex justify-center items-center">

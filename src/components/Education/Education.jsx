@@ -41,7 +41,7 @@ const Education = () => {
   return (
     <>
       <div>
-        <div className="py-28">
+        <div id="education" className="py-28">
           <div className="maxWidth mx-auto ">
             <div className="title-line mb-10"></div>
             <div className="text-center mb-10 flex justify-center items-center">
