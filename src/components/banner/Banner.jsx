@@ -1,7 +1,7 @@
 import banner from "../../app/assets/home/shanto-vsi2.png";
 // import Link from "next/link";
 import "./Banner.css";
-import pdf from "../../app/assets/pdf/Shakil_Alam_SQA_3_Years.pdf (4).pdf";
+import pdf from "../../pdf/Shakil_Alam_SQA_3_Years.pdf (4).pdf";
 import TextChangeAnimation from "./TextChangeAnimation";
 import { FaArrowDown, FaCaretDown } from "react-icons/fa";
 import Image from "next/image";
@@ -40,7 +40,7 @@ export const Banner = () => {
                   <FaLinkedin />
                 </i>
               </a>
-              <a href="#" className="mr-3">
+              <a href="https://x.com/home" className="mr-3">
                 <i className="text-[25px] text-[#fff] hover:text-green-500 transition-all duration-500">
                   <FaTwitter />
                 </i>
@@ -75,6 +75,8 @@ export const Banner = () => {
               <a
                 href={pdf}
                 download="Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-outline-warning my-3 p-4 border border-x-slate-400"
               >
                 Download Resume
