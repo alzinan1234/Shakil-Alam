@@ -15,6 +15,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { FaXTwitter } from "react-icons/fa6";
 export const Banner = () => {
   return (
     <>
@@ -42,7 +43,7 @@ export const Banner = () => {
               </a>
               <a href="https://x.com/home" className="mr-3">
                 <i className="text-[25px] text-[#fff] hover:text-green-500 transition-all duration-500">
-                  <FaTwitter />
+                  <FaXTwitter />
                 </i>
               </a>
               <a href="https://github.com/Shakil-Alam76" className="mr-3">

@@ -9,6 +9,8 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
 const About = () => {
   return (
@@ -68,36 +70,36 @@ const About = () => {
                 objectFit="cover"
               />
             </div>
-            <div className="flex space-x-4">
+            <div className="flex gap-4">
               <a
-                href="/"
-                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+                href="https://www.facebook.com/"
+                className="text-[40px] text-[#fff] bg-[#0867FF] p-1 rounded hover:text-green-500 transition-all duration-500"
               >
                 <FaFacebook />
               </a>
               <a
-                href="#"
-                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+                href="https://www.linkedin.com/in/md-shakil-alam-seu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                className="text-[40px] text-[#fff] bg-[#0B66C2] p-1 rounded hover:text-green-500 transition-all duration-500"
               >
                 <FaLinkedin />
               </a>
               <a
-                href="#"
-                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+                href="https://x.com/home"
+                className="text-[40px] text-[#fff] bg-[#000]  p-1 rounded hover:text-green-500 transition-all duration-500"
               >
-                <FaTwitter />
+                <FaXTwitter />
               </a>
               <a
-                href="#"
-                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+                href="https://github.com/Shakil-Alam76"
+                className="text-[40px] text-[#fff] bg-[#000]  p-1 rounded hover:text-green-500 transition-all duration-500"
               >
                 <FaGithub />
               </a>
               <a
-                href="#"
-                className="text-[40px] text-[#19d532] hover:text-green-500 transition-all duration-500"
+                href="https://leetcode.com/u/shantoseu/"
+                className="text-[40px] text-[#fff] bg-[#FFA117] p-1 rounded hover:text-green-500 transition-all duration-500"
               >
-                <FaEnvelope />
+                <SiLeetcode />
               </a>
             </div>
           </div>
