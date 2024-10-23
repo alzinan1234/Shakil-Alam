@@ -58,13 +58,13 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/md-shakil-alam-seu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="text-white text-2xl bg-[#0270AD] p-2 rounded hover:text-gray-300"
           >
             <FaLinkedinIn />
           </a>
           <a
-            href="#"
+            href="https://github.com/Shakil-Alam76"
             className="text-white bg-[black] p-2 rounded text-2xl hover:text-gray-300"
           >
             <FaGithub />
