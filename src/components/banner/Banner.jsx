@@ -1,6 +1,7 @@
 import banner from "../../app/assets/home/shanto-vsi2.png";
 // import Link from "next/link";
 import "./Banner.css";
+import pdf from "../../app/assets/pdf/Shakil_Alam_SQA_3_Years.pdf (4).pdf";
 import TextChangeAnimation from "./TextChangeAnimation";
 import { FaArrowDown, FaCaretDown } from "react-icons/fa";
 import Image from "next/image";
@@ -13,6 +14,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 export const Banner = () => {
   return (
     <>
@@ -25,12 +27,15 @@ export const Banner = () => {
           <div className=" maxWidth mx-auto block px-3 ">
             {/* ---------socail-icon ---------- */}
             <div className="social-icon flex flex-wrap gap-3">
-              <a href="/" className="mr-3">
+              <a href="https://www.facebook.com/" className="mr-3">
                 <i className="text-[25px] text-[#fff]  hover:text-green-500 transition-all duration-500 ">
                   <FaFacebook />
                 </i>
               </a>
-              <a href="#" className="mr-3">
+              <a
+                href="https://www.linkedin.com/in/md-shakil-alam-seu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                className="mr-3"
+              >
                 <i className="text-[25px] text-[#fff]  hover:text-green-500 transition-all duration-500">
                   <FaLinkedin />
                 </i>
@@ -40,14 +45,14 @@ export const Banner = () => {
                   <FaTwitter />
                 </i>
               </a>
-              <a href="#" className="mr-3">
+              <a href="https://github.com/Shakil-Alam76" className="mr-3">
                 <i className="text-[25px] text-[#fff] hover:text-green-500 transition-all duration-500">
                   <FaGithub />
                 </i>
               </a>
-              <a href="#" className="mr-3">
+              <a href="https://leetcode.com/u/shantoseu/" className="mr-3">
                 <i className="text-[25px] text-[#fff]  hover:text-green-500 transition-all duration-500">
-                  <FaEnvelope />
+                  <SiLeetcode />
                 </i>
               </a>
             </div>
@@ -67,9 +72,13 @@ export const Banner = () => {
               <TextChangeAnimation />
             </div>
             <div className=" mt-10">
-              <button className="bg-[#F26C4F] p-3 px-6 text-xl text-white">
-                Download CV
-              </button>
+              <a
+                href={pdf}
+                download="Resume.pdf"
+                className="btn btn-outline-warning my-3 p-4 border border-x-slate-400"
+              >
+                Download Resume
+              </a>
             </div>
 
             {/* ------------------------ Banner button  -------------- */}
