@@ -128,11 +128,12 @@ export const Navbar = () => {
             <ul className="flex flex-col space-y-6">
               {[
                 "Home",
-                "Services",
+                "Experience",
                 "Project",
                 "About",
-                "Reviews",
-                "Contact",
+                "Blog",
+                "Education",
+                "Expertise",
               ].map((item) => (
                 <li
                   key={item}

@@ -22,8 +22,7 @@ const ProductSlider = () => {
       image: "https://i.ytimg.com/vi/wTBJF-UTIrY/maxresdefault.jpg",
     },
     {
-      image:
-        "https://w7.pngwing.com/pngs/798/102/png-transparent-upwork-freelancer-com-fiverr-peopleperhour-others.png",
+      image: "https://i.ytimg.com/vi/wTBJF-UTIrY/maxresdefault.jpg",
     },
     {
       image: "https://www.toptal.com/toptal-logo.png",
