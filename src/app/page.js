@@ -21,7 +21,6 @@ const Home = () => {
       <Projects />
       <Blog />
       <MarketPlace />
-      <h1>hello </h1>
     </div>
   );
 };
