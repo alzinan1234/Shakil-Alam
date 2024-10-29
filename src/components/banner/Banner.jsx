@@ -25,7 +25,7 @@ export const Banner = () => {
       >
         {/* ------------------- banner container ---------------- */}
         <div className="  items-center pt-[150px]">
-          {/* <h1>lorem</h1> */}
+          <h1>lorem</h1>
           <div className=" maxWidth mx-auto block px-3 ">
             {/* ---------socail-icon ---------- */}
             <div className="social-icon flex flex-wrap gap-3">
