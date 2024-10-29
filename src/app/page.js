@@ -14,6 +14,8 @@ const Home = () => {
   return (
     <div>
       <Banner />
+      {/* <h1>hello</h1> */}
+      <h1>lorem</h1>
       <About />
       <Experience />
       <Education />
